@@ -12,5 +12,10 @@ Teacher::Teacher(const string &_firstName, const string &_lastName,
 
 void Teacher::addGrade(Student &S, int grade)
 {
-    S.Grades.push_back(grade);
+    if (grade <= 6 && grade >= 1)
+    {
+        S.Grades.push_back(grade);
+    }
+    else
+        throw invalid_argument("Grade must be greater than 1 and less than 6");
 }

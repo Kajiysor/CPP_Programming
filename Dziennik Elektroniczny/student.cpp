@@ -10,6 +10,7 @@ Student::Student(const string &_firstName, const string &_lastName, const string
 
 void Student::printGrades()
 {
+    cout << *this << " Grades: ";
     for (unsigned int i = 0; i < Grades.size(); i++)
     {
         cout << Grades[i] << " ";

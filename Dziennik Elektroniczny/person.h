@@ -22,6 +22,8 @@ public:
 
     virtual void info() const;
 
+    friend std::ostream &operator<<(std::ostream &os, Person &t);
+
 private:
     std::string firstName;
     std::string lastName;

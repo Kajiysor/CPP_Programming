@@ -48,5 +48,12 @@ string Person::getPESEL() const
 
 void Person::info() const
 {
-    cout << getFirstName() << " " << getLastName() << "\nPESEL: " << getPESEL() << endl;
+    cout << getFirstName() << " " << getLastName() << "\nPESEL: " << getPESEL() << "\n"
+         << endl;
+}
+
+ostream &operator<<(ostream &os, Person &t)
+{
+    os << t.firstName << ' ' << t.lastName;
+    return os;
 }
