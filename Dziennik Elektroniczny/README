@@ -1,0 +1,17 @@
+===========================================================================
+AUTOR: Jonasz Gawlik                                     Krakow, 09.06.2020
+===========================================================================
+
+* Jak uruchomic program
+=========================
+
+>> Nalezy stworzyc folder, w ktorym chcemy zeby znajdowaly sie nasze pliki
+    do budowania programu (np. build)
+
+>> Nastepnie nalezy bedac w naszym stworzonym folderze nalezy wpisac komende
+    "cmake .."
+
+>> Kolejno bedac w naszym folderze nalezy wpisac komende "make" by skompilowac
+    wszystkie potrzebne pliki
+
+>> By uruchomic program nalezy wpisac komende "./TEST"
